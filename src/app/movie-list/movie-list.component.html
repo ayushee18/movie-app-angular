@@ -1,0 +1,12 @@
+<md-card *ngFor="let res of result">
+	<md-card-header>
+    <div md-card-avatar></div>
+    <md-card-title>{{res.Title}}</md-card-title>
+    </md-card-header>
+    <img md-card-image src={{res.Poster}}>
+    <md-card-content><p>{{res.Type}}</p></md-card-content>
+    <md-card-actions>
+    	<button md-button>Like</button>
+    	<button md-button>ADD</button>
+    </md-card-actions>
+</md-card>
