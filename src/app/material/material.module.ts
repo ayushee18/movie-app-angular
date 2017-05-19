@@ -12,3 +12,4 @@ import { MdToolbarModule, MdButtonModule } from '@angular/material';
    MdButtonModule ]
 })
 export class MaterialModule { }
+/*Created a module to import all angular material functionalities needed to make the app*/

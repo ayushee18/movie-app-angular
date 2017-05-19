@@ -17,6 +17,7 @@ export class SearchComponent implements OnInit {
   getMovie(moviename: string){
 
  	 this.router.navigate(['movie', moviename]);
+ 	 /*navigating to movie path to display movie list*/
 
  	}
 

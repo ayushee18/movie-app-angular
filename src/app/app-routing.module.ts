@@ -7,6 +7,7 @@ import { SearchComponent } from './search/search.component';
 const routes: Routes = [
 	{ path: '', redirectTo: 'movie/batman', pathMatch: 'full'},
 	{ path: 'movie/:moviename' , component: MovieListComponent },
+	/*creating paths*/
 ]
 
 @NgModule({
