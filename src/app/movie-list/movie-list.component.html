@@ -1,13 +1,19 @@
-<md-card *ngFor="let res of result">
+<md-grid-list cols="4" rowHeight="1:3">
+<div *ngFor="let res of result">
+<md-grid-tile>
+<md-card>
 	<md-card-header>
-    <div md-card-avatar></div>
     <md-card-title>{{res.Title}}</md-card-title>
+    <md-card-title>{{res.Year}}</md-card-title>
+    <md-card-title>{{res.imbdID}}</md-card-title>
     </md-card-header>
     <img md-card-image src={{res.Poster}}>
-    <md-card-content><p>{{res.Type}}</p></md-card-content>
     <md-card-actions>
     	<button md-button>Like</button>
     	<button md-button>ADD</button>
     </md-card-actions>
 </md-card>
+</md-grid-tile>
+</div>
+</md-grid-list>
 <!--displaying movie list below search bar-->

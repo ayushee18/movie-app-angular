@@ -5,7 +5,7 @@ import 'rxjs/add/operator/switchMap';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  styleUrls: [ './search.component.css' ]
 })
 export class SearchComponent implements OnInit {
 
@@ -14,11 +14,11 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
-  getMovie(moviename: string){
+  getMovie(moviename: string) {
 
- 	 this.router.navigate(['movie', moviename]);
- 	 /*navigating to movie path to display movie list*/
+  this.router.navigate( [ 'movie', moviename ] );
+ 	/*navigating to movie path to display movie list*/
 
- 	}
+ }
 
 }

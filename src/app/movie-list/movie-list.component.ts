@@ -14,12 +14,12 @@ export class MovieListComponent implements OnInit {
 
 private result;
 
-  constructor(private router: Router, private route: ActivatedRoute, private movieservice: MovieService) { }
+  constructor( private route: ActivatedRoute, private movieservice: MovieService) { }
 
-  ngOnInit(): void { 
-  	this.route.params
-  	.switchMap((params: Params) => this.movieservice.searchMovie(params['moviename']))
-  	.subscribe((data) => {this.result = data; console.log(this.result);});
+  ngOnInit(): void {
+  this.route.params
+      .switchMap((params: Params) => this.movieservice.searchMovie(params['moviename']))
+      .subscribe((data) => {this.result = data; console.log(this.result); });
   	/*using switch map to fetch params by using moviename parameter from search bar*/
   }
 
